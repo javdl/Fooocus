@@ -369,3 +369,10 @@ cat requirements.txt | xargs poetry add
 ```sh
 poetry run python entry_with_update.py
 ```
+
+## LibGL quickfix
+
+```sh
+nix run --impure github:guibou/nixGL -- poetry run python entr
+y_with_update.py
+```
