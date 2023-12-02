@@ -150,6 +150,7 @@ Your Linux needs to have **Python 3.10** installed, and lets say your Python can
     cd Fooocus
     python3 -m venv fooocus_env
     source fooocus_env/bin/activate
+    set VIRTUAL_ENV "/home/joost/git/Fooocus/fooocus_env"
     pip install -r requirements_versions.txt
 
 See the above sections for model downloads. You can launch the software with:
