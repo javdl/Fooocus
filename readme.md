@@ -364,9 +364,10 @@ Note that if no `--language` is given and at the same time `Fooocus/language/def
 cat requirements.txt | xargs poetry add
 ```
 
-## Run it with Poetry
+## Install dependencies & run with Poetry
 
 ```sh
+poetry install
 poetry run python entry_with_update.py
 ```
 
