@@ -51,3 +51,4 @@ experiment.py
 /.coverage*
 /auth.json
 /fooocus_env
+fooocus_env
