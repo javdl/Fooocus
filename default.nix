@@ -18,5 +18,7 @@ pkgs.mkShell {
       # export LD_LIBRARY_PATH=${pkgs.linuxPackages.nvidia_x11}/lib:${pkgs.ncurses5}/lib
       export EXTRA_LDFLAGS="-L/lib -L${pkgs.linuxPackages.nvidia_x11}/lib"
       export EXTRA_CCFLAGS="-I/usr/include"
+      # fixes libstdc++ issues and libgl.so issues
+      export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib/
    '';          
 }
